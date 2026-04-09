@@ -1,28 +1,45 @@
 # aiir Releases
 
-This repository only hosts published release artifacts for `aiir`.
+`aiomni/aiir-release` is the public release repository for `aiir`.
 
-The source code is not stored here. `aiomni/aiir-release` exists so the public macOS installer and app bundle can be distributed through GitHub Releases, while the source repository remains private.
+It only exists to host published macOS release artifacts through GitHub Releases. The application source code is maintained in a separate private repository and is not mirrored here.
 
-## Download
+## What This Repository Contains
 
-Download either of these assets from the Releases page:
+- Release assets for public downloads
+- Versioned macOS Apple Silicon builds
+- Minimal documentation for installation and first launch
 
-- `aiir-*-macos-arm64.dmg`
-- `aiir-*-macos-arm64.app.zip`
+Current release asset names:
+
+- `aiir-<version>-macos-arm64.dmg`
+- `aiir-<version>-macos-arm64.app.zip`
 
 ## Platform
 
-- macOS Apple Silicon only
-- arm64 build only
-- unsigned app bundle for now
+- macOS on Apple Silicon (`arm64`) only
+- Native `.app` bundle distribution
+- Unsigned app bundle for now
 
 ## Install
 
-1. Either open the DMG, or unzip `aiir-*.app.zip`.
-2. Move `aiir.app` into `/Applications`.
-3. Launch `aiir` from `/Applications`.
+1. Open the latest release and download either the `.dmg` or `.app.zip` asset.
+2. If you downloaded the DMG, open it and drag `aiir.app` into `/Applications`.
+3. If you downloaded the ZIP archive, unzip it and move `aiir.app` into `/Applications`.
+4. Launch `aiir` from `/Applications`.
 
-## Unsigned App Notice
+## First Launch on macOS
 
-Because the app is currently unsigned, macOS may block the first launch. If that happens, right-click the app and choose `Open`, or allow it from `System Settings` -> `Privacy & Security`.
+Because the app is currently unsigned, macOS Gatekeeper may block the first launch.
+
+If that happens:
+
+1. Right-click `aiir.app` and choose `Open`.
+2. If macOS still blocks it, open `System Settings` -> `Privacy & Security`.
+3. Allow the app to run, then launch it again.
+
+## Notes
+
+- This repository is for distribution artifacts only.
+- New versions are published on the Releases page.
+- The README in this repository is synced from the source repository during the release process.
