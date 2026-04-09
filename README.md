@@ -2,11 +2,14 @@
 
 This repository only hosts published release artifacts for `aiir`.
 
-The source code is not stored here. `aiomni/aiir-release` exists so the public macOS installer can be distributed through GitHub Releases, while the source repository remains private.
+The source code is not stored here. `aiomni/aiir-release` exists so the public macOS installer and app bundle can be distributed through GitHub Releases, while the source repository remains private.
 
 ## Download
 
-Download the latest `aiir-*-macos-arm64.dmg` asset from the Releases page.
+Download either of these assets from the Releases page:
+
+- `aiir-*-macos-arm64.dmg`
+- `aiir-*-macos-arm64.app.zip`
 
 ## Platform
 
@@ -16,8 +19,8 @@ Download the latest `aiir-*-macos-arm64.dmg` asset from the Releases page.
 
 ## Install
 
-1. Open the DMG.
-2. Drag `aiir.app` into `/Applications`.
+1. Either open the DMG, or unzip `aiir-*.app.zip`.
+2. Move `aiir.app` into `/Applications`.
 3. Launch `aiir` from `/Applications`.
 
 ## Unsigned App Notice
